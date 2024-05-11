@@ -1,0 +1,14 @@
+{
+  "name": "js-proj-1",
+  "version": "1.0.0",
+  "main": "hello-world.js",
+  "scripts": {
+    "hello": "node hello-world.js",
+    "bye": "node bye-world.js",
+    "test": "node test-world.js"
+  },
+  "author": "PTQuality",
+  "license": "ISC",
+  "description": "It's learning project how to work with JS/TS and later use Playwright framework to automate E2E tests"
+}
+

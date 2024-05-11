@@ -10,7 +10,13 @@
 //// TODO:
 // here place your solution:
 
+let passedValue = 'passed'
+let failedValue = 'failed'
+let mainValue = 'integration tests'
 
+console.log(mainValue + ' ' + failedValue + ' ' + passedValue)
+console.log(`${mainValue}: ${failedValue}`)
+console.log(`${mainValue}: ${passedValue}`)
 
 
 

@@ -7,8 +7,7 @@
 //// TODO:
 // here place your solution:
 
-
-
+console.log("'Hello jaktestowac.pl!'")
 
 //// DONT MODIFY CODE BELOW!
 // Here You will find expected result of exercise

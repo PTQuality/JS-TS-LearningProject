@@ -11,11 +11,11 @@
 // here place your solution:
 
 
+let ValueToBePrinted = 12
+const NOTCHANGEABLEVARIABLE = 'John Doe'
 
-
-
-
-
+console.log(NOTCHANGEABLEVARIABLE)
+console.log(ValueToBePrinted)
 
 
 

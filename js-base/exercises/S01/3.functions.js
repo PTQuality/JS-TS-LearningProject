@@ -13,7 +13,13 @@
 //// TODO:
 // here place your solution:
 
+function multiplier(paramOne, paramTwo){
+    return paramOne*paramTwo
+}
 
+let Result = multiplier(3,7)
+
+console.log(`Result of multiplication: ${Result}`)
 
 
 

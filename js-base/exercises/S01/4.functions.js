@@ -12,6 +12,14 @@
 //// TODO:
 // here place your solution:
 
+function stringContact (stringOne, stringTwo, stringThree = '!')
+{
+    return (`${stringOne} ${stringTwo} ${stringThree}`)
+}
+
+const Result = stringContact("Hello", "World")
+
+console.log(Result)
 
 
 

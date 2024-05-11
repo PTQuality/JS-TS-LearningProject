@@ -10,8 +10,14 @@
 // here place your solution:
 
 function elementChecker(anArray) {
-
+for (let index = 0; index < anArray.length; index++){
+    console.log(anArray[index])
 }
+// or
+anArray.forEach((element) => console.log(element))
+}
+
+
 
 
 

@@ -10,6 +10,12 @@
 //// TODO:
 // here place your solution:
 
+
+let arrayOfString = ['abc', 'def', 'gh']
+console.log(arrayOfString)
+console.log(arrayOfString[1])
+
+
 //// DONT MODIFY CODE BELOW!
 // Here You will find expected result of exercise
 

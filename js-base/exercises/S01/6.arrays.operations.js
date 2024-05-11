@@ -13,6 +13,15 @@
 //// TODO:
 // here place your solution:
 
+let arrayOfStrings = ['abc', 'def', 'gh']
+arrayOfStrings.push('xyz')
+console.log("String array after adding 'xyz' to it", arrayOfStrings)
+arrayOfStrings = arrayOfStrings.concat([1, 2, 3])
+console.log("String array after adding other array to it", arrayOfStrings)
+arrayOfStrings[2] = 555
+console.log("String array after replacing 2nd value with value '555'", arrayOfStrings)
+
+ 
 
 
 

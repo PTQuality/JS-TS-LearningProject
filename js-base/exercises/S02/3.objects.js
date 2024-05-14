@@ -13,6 +13,19 @@
 //// TODO:
 // here place your solution:
 
+let User = {
+    name: 'Tom',
+    address: 'Random address 00-000',
+    password: 'Secrect password',
+    rights: ['write', 'read']
+}
+
+console.log('User information: ', User)
+console.log('User name only:', User['name'])
+User['name'] = 'admin'
+console.log('User name only:', User['name'])
+
+
 
 
 

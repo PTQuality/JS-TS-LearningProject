@@ -12,11 +12,11 @@
 
 function elementChecker(anArray) {
     anArray.forEach(element => {
-        // here place your solution:
-
-
-
-
+        if (element === 1) {
+            console.log("Element value is one!");
+        } else if (element === 0) {
+            console.log("Element value is zero!");
+        }
     });
 }
 

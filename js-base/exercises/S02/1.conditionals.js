@@ -18,9 +18,42 @@
 //// TODO:
 // here place your solution:
 
-function printPlayersState(health) {
-
+function printPlayersStateSwitch(health) {
+switch (true){
+    case(health >= 100):
+    console.log("Player is alive and at full health!");
+    break;
+    case(health >= 10 && health <= 99):
+    console.log("Player is alive and at ok health.");
+    break;
+    case(health >= 1 && health <= 10):
+    console.log("Player is alive and at very poor health!");
+    break;
+    case(health < 1):
+    console.log("Player is dead.");
+    break;
+    default:
+    console.log("Invalid health value.");
+    break;
 }
+//or
+}
+
+
+function printPlayerStateIfElse(health) {
+    if (health >= 100) {
+        console.log("Player is alive and at full health!");
+    } else if (health >= 10 && health <= 99) {
+        console.log("Player is alive and at ok health.");
+    } else if (health >= 1 && health <= 10) {
+        console.log("Player is alive and at very poor health!");
+    } else if (health < 1) {
+        console.log("Player is dead.");
+    } else {
+        console.log("Invalid health value.");
+    }
+}
+
 
 
 
@@ -28,11 +61,19 @@ function printPlayersState(health) {
 //// DONT MODIFY CODE BELOW!
 // Here You will find expected result of exercise and verification!
 
-printPlayersState(100)
-printPlayersState(60)
-printPlayersState(0)
-printPlayersState(5)
-printPlayersState(-1)
+printPlayersStateSwitch(100)
+printPlayersStateSwitch(60)
+printPlayersStateSwitch(0)
+printPlayersStateSwitch(5)
+printPlayersStateSwitch(-1)
+
+console.log("==========================SECOND SOLUTION SEPARATOR:=================================")
+
+printPlayerStateIfElse(100)
+printPlayerStateIfElse(60)
+printPlayerStateIfElse(0)
+printPlayerStateIfElse(5)
+printPlayerStateIfElse(-1)
 
 // Expected output:
 // After running this script on console You should receive:

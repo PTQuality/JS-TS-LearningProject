@@ -9,12 +9,13 @@
 // to test your solution in terminal You can run following command:
 // npm run es2e4
 
+
 //// TODO:
 // here place your solution:
 
+import { printer, userData } from "./helpers.js"
 
-
-
+printer(userData)
 
 
 

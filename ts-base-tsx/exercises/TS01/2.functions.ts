@@ -25,6 +25,36 @@
 //// TODO:
 //// -----------------------HERE PLACE YOUR SOLUTION:-------------------------
 
+function formatStrings(pageName: string, componentName: string): string {
+    return `Opening page ${pageName} and checking ${componentName}`
+}
+
+const formatStringsOutput: string = formatStrings("LoginPage", "UserName")
+console.log(formatStringsOutput)
+console.log(
+    "=========================================================SEPARATOR BETWEEN METHODS================================="
+)
+
+const formatStringsAnonymous = function (pageName: string, componentName: string): string {
+    return `Opening page ${pageName} and checking ${componentName}`
+}
+
+const formatStringsAnonymousOutput: string = formatStringsAnonymous("HomePage", "UserName")
+console.log(formatStringsAnonymousOutput)
+console.log(
+    "=========================================================SEPARATOR BETWEEN METHODS================================="
+)
+
+const formatStringsArrow = (pageName: string, componentName: string): string => {
+    return `Opening page ${pageName} and checking ${componentName}`
+}
+
+const formatStringsArrowOutput: string = formatStringsArrow("ContactPage", "UserName")
+console.log(formatStringsArrowOutput)
+console.log(
+    "=========================================================SEPARATOR BETWEEN METHODS================================="
+)
+
 //// -----------------------DON'T MODIFY CODE BELOW!-------------------------
 // Here you will find expected result of exercise
 

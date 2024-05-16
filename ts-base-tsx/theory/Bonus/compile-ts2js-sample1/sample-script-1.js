@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 console.log("> Running TypeScript...");
 var status;
 (function (status) {
     status[status["resting"] = 0] = "resting";
     status[status["working"] = 1] = "working";
 })(status || (status = {}));
-var names = ["Dale", "Harry S. Truman", "Hawk"];
-var daleCooper = {
+const names = ["Dale", "Harry S. Truman", "Hawk"];
+const daleCooper = {
     name: "Dale Cooper",
     age: 40,
     hair: "black",
@@ -16,13 +14,15 @@ var daleCooper = {
     currentStatus: status.resting
 };
 function printList(list) {
-    for (var index = 0; index < list.length; index++) {
-        var element = list[index];
-        console.log("".concat(index, ": ").concat(element));
+    for (let index = 0; index < list.length; index++) {
+        const element = list[index];
+        console.log(`${index}: ${element}`);
     }
 }
 function printHuman(human) {
-    console.log("".concat(human.name, ", age: ").concat(human.age));
+    console.log(`${human.name}, age: ${human.age}`);
 }
 printList(names);
 printHuman(daleCooper);
+export {};
+//# sourceMappingURL=sample-script-1.js.map

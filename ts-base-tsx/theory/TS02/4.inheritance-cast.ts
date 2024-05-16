@@ -169,7 +169,7 @@ function invalidCastingExample(element: BasePageElement) {
 
 invalidCastingExample(button) // this is ok ✅
 console.log("")
-// invalidCastingExample(textBox) // this is not ok ⛔ // TODO: uncomment to see error after running running ⛔
+invalidCastingExample(textBox) // this is not ok ⛔ // TODO: uncomment to see error after running running ⛔
 
 // on console 👀 you will get:
 // Check if element instanceof Button: true

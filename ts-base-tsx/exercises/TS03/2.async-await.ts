@@ -20,25 +20,38 @@
 // to test your solution in terminal you can run following command:
 // npm run ex3-2
 
-import { cheatAndPeekProjectSettings, loadProjectSettings, saveProjectSettings } from "./helpers/async.helpers"
+import { cheatAndPeekProjectSettings, loadProjectSettings, saveProjectSettings } from "./helpers/async.helpers";
 
 //// TODO:
 //// -----------------------HERE PLACE YOUR SOLUTION:-------------------------
 
 // 1:
-console.log("1:")
-cheatAndPeekProjectSettings()
+console.log("1:");
+cheatAndPeekProjectSettings();
+console.log("Result after save:", await saveProjectSettings("Firefox", "1"));
+cheatAndPeekProjectSettings();
 
 // 2:
-console.log("2:")
-
+console.log("2:");
+console.log("Result after load: ", await loadProjectSettings());
 // 3:
-
+async function loadValue(key: string): Promise<string | undefined> {
+    let projectSettings = await loadProjectSettings();
+    for (const settingKey in projectSettings) {
+        if (settingKey === key) {
+            return projectSettings[settingKey];
+        }
+    }
+    return `Such key does not exist -> (${undefined})`;
+}
 // 4:
-console.log("4:")
-
+console.log("4:");
+let headlessValue = await loadValue("headless");
+console.log("headless value:", headlessValue);
 // 5:
-console.log("5:")
+console.log("5:");
+headlessValue = await loadValue("chrome");
+console.log("Chrome value:", headlessValue);
 
 //// -----------------------DON'T MODIFY CODE BELOW!-------------------------
 // Here you will find expected result of exercise
@@ -62,4 +75,4 @@ console.log("5:")
 // Chrome value: undefined
 
 // Ignore this line - used to be able to redeclare variables in this project
-export {}
+export {};

@@ -18,6 +18,39 @@
 //// TODO:
 //// -----------------------HERE PLACE YOUR SOLUTION:-------------------------
 
+interface UserData {
+    id: number
+    fullName: string
+    pass: string
+    data?: string
+}
+
+const userOne: UserData = {
+    id: Math.random() * 100,
+    fullName: "Seb",
+    pass: "Secret password"
+}
+
+const userTwo: UserData = {
+    id: Math.random() * 100,
+    fullName: "Cab",
+    pass: "Secret passwordTwo",
+    data: "I got some data"
+}
+
+console.log(userOne)
+console.log(userTwo)
+
+const userOneId = userOne.id
+const userTwoId = userTwo.id
+
+userOne.id = userTwoId
+userTwo.id = userOneId
+
+console.log("~~~~~~~~~~~~~~~~~~~~~~After ~ID changes ~~~~~~~~~~~~~~~~~~~~")
+console.log(userOne)
+console.log(userTwo)
+
 //// -----------------------DON'T MODIFY CODE BELOW!-------------------------
 // Here you will find expected result of exercise
 

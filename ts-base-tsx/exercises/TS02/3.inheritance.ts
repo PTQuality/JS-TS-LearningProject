@@ -27,6 +27,32 @@
 //// TODO:
 //// -----------------------HERE PLACE YOUR SOLUTION:-------------------------
 
+class Animal {
+    type: string;
+    protected age = 0;
+    constructor(type: string) {
+        this.type = type;
+    }
+}
+
+class Cat extends Animal {
+    constructor(type: string) {
+        super(type);
+    }
+    increaseAge(): void {
+        this.age++;
+    }
+    present(): string {
+        return `My type is ${this.type} and my age is ${this.age})`;
+    }
+}
+
+const cat = new Cat("cat");
+cat.increaseAge();
+cat.increaseAge();
+console.log(cat.present());
+cat.present;
+
 //// -----------------------DON'T MODIFY CODE BELOW!-------------------------
 // Here you will find expected result of exercise
 
